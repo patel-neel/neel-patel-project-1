@@ -9,18 +9,12 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 
-/* * {
-    border: red 1px solid;
-} */
-
 
 html {
     font-size: 125%;
     font-family: 'Roboto';
     font-weight: 300;
     color: white;
-    min-width: 1280px;
-    /* max-width: 1280px;; */
 }
 
 
@@ -29,7 +23,8 @@ h1, h2, h3 {
     font-weight: 300;
 }
 
-button {
+.readMore {
+    text-decoration: none;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
@@ -47,6 +42,10 @@ header {
 .wrapper {
     width: 80%;
     margin: 0 auto;
+}
+
+.fa-bars {
+    display: none;
 }
 
 .menu {
@@ -101,27 +100,22 @@ h1 {
 
 .handCrafted {
     background: #500801;
-    height: 450px;
-}
-
-.handCraftedImage,
-.handCraftedInfo{
-    padding-top: 100px;
 }
 
 .handCraftedImage img {
     width: 100%;
-    
+    display: block;
 }
 
 .handCraftedImage {
     width: 30%;
     float: left;
+    padding: 10% 0;
 }
 
 .handCraftedInfo {
     width: calc(70% - 40px);
-    margin-left: 40px;
+    margin: 8% 0;
     float: right;
 }
 
@@ -137,21 +131,12 @@ h1 {
     line-height: 29px;
 }
 
-/* .handCraftedInfo button {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-family: 'petit formal script';
-    padding: 10px 20px;
-} */
-
 /* LATEST COLLECTION SECTION */
 
 .latestCollection {
     background-color: #815600;
-    height: 750px;
-
 }
+
 .latestCollection h2 {
     font-size: 2.7rem;
     text-align: center;
@@ -160,7 +145,23 @@ h1 {
 }
 
 .latestGallery img {
-    width: 33%;
+    display: block;
+    width: 100%;
+}
+
+.latestGallery div {
+    width: 32%;
+    float: left;
+}
+
+.photo1 {
+    margin: 0 1% 10% 0;
+}
+.photo2 {
+    margin: 0 1% 10% 1%;
+}
+.photo3 {
+    margin: 0 0 10% 1%;
 }
 
 
@@ -199,7 +200,11 @@ h1 {
 .fallTrendsInfo {
     width: 50%;
     float: left;
-    padding: 50px 50px 50px 0;
+    padding: 5% 5% 5% 10%;
+}
+
+.fallTrendsInfo p {
+    padding-bottom: 20px;
 }
 
 .fallTrendsImage {
@@ -231,7 +236,10 @@ h1 {
 .veganLeatherInfo {
     width: 50%;
     float: right;
-    padding: 50px;
+    padding: 5% 10% 5% 5%;
+}
+.veganLeatherInfo p {
+    padding-bottom: 20px;
 }
 
 
@@ -245,7 +253,7 @@ footer {
 
 footer ul {
     margin: 0;
-    padding: 100px 0;
+    padding: 150px 0 0 0;
     list-style-type: none;
     width: 20%;
     float: left;
@@ -268,13 +276,13 @@ footer h3 {
 
 footer .contact {
     width: 20%;
-    padding: 100px 0 0 0;
+    padding: 130px 0 0 0;
     float: left;
     text-align: right;
 }
 
 .contact p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1rem;
 }
 
@@ -285,7 +293,228 @@ footer .copyright {
     padding: 4px;
 }
 
+form {
+    display: inline-block;
+}
 
+form input {
+    padding: 10px 150px 10px 5px;
+    font-style: italic;
+    border: none;
+    float: left;
+}
+form button {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-family: 'petit formal script';
+    padding: 10px 20px;
+    float: right;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+        float: right;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 3rem;
+        text-align: right;
+        width: 100%;
+    }
+
+    .headerImage {
+        float: none;
+        width: 100%;
+        position: relative;
+        right: 60px;
+    }
+
+    .handCraftedImage {
+        float: none;
+        width: 100%;
+    }
+    .handCraftedInfo {
+        float: none; 
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .readMore {
+        display: inline-block;
+        position: relative;
+        left: 150px;
+        margin-bottom: 20px;
+    }
+
+    .photo2 {
+        display: none;
+    }
+
+    .latestGallery div {
+        width: calc(50% - 5px);
+        float: left;
+    }
+
+    .latestCollection h2 {
+        font-size: 2.2rem;
+    }
+
+    .iconSection li {
+    width: 100%;
+    float: none;
+    margin: 10px 0;
+    }
+
+    .iconSection ul {
+        padding: 50px 0;
+    }
+
+    .fallTrendsInfo {
+        width: 100%;
+        float: none;
+        padding: 5% 5% 5% 5%;
+        line-height: 1.8rem;
+    }
+
+    .fallTrends h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .fallTrendsImage {
+        float: none;
+        width: 100%;
+    }
+
+    .veganLeather h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .veganLeatherImage {
+        float: none;
+        width: 100%;
+    }
+
+    .veganLeatherInfo {
+        float: none;
+        width: 100%;
+        padding: 5% 5% 5% 5%;
+        line-height: 1.8rem;
+    }
+
+    footer ul {
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    float: none;
+    padding: 50px 0;
+    }
+
+    footer li {
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+
+    footer .subscribe {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    float: none;
+}
+
+    form {
+        display: inline-block;
+    }
+
+    form input {
+        padding: 10px 10px 10px 10px;
+        font-style: italic;
+        width: 100%;
+        border: none;
+        float: none;
+        text-align: center;
+    }
+    form button {
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: none;
+        font-family: 'petit formal script';
+        font-size: 1.4rem;
+        padding: 20px 30px;
+        margin: 20px;
+        float: none;
+    }
+
+
+    footer .contact {
+        width: 100%;
+        padding: 0 0 0 0;
+        float: none;
+        text-align: center;
+    }
+
+    .contact p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    @media (max-width: 420px) {
+        .readMore {
+            display: inline-block;
+            position: relative;
+            left: 100px;
+            margin-bottom: 20px;
+        }
+    }
+
+        @media (max-width: 320px) {
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .iconSection h3 {
+            font-size: 1.5rem;
+        }
+        
+        .readMore {
+            display: inline-block;
+            position: relative;
+            left: 70px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+
+
+
+
+
+    
+}
 
 
 

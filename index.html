@@ -20,10 +20,11 @@
                     <li>Contact</li>
                 </ul>
             </nav>
+            <i class="fas fa-bars"></i>
 
             <div class="headerContent">
                 <h1>
-                    Glass Handbags
+                    Glass<br>Handbags
                 </h1>
                 <div class="headerImage">
                     <img src="./Assets/group-bags.png" alt="Three medium sized handbags. A yellow handbag in the front followed by a red handbag then a light brown one in the back.">
@@ -63,19 +64,26 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis corrupti accusantium reprehenderit quibusdam! Sit commodi, vero eveniet amet ut a officia ipsam iusto accusantium praesentium! Fugiat illum, maxime ut saepe nulla aliquid repellat voluptates numquam. Fugiat sed, reiciendis quae ut quibusdam, deleniti molestiae neque enim voluptas amet voluptatem recusandae.
                 </p>
-                <button>read more</button>
+                <a href="#" class="readMore">read more</a>
             </div> <!--END INFO DIV-->
         </div> <!--END OF WRAPPER-->
     </section> <!--end of hand crafted section-->
 
     <section class="latestCollection">
 
-        <div class="wrapper">
+        <div class="wrapper clearfix">
             <h2>Latest Collection</h2>
             <div class="latestGallery">
-                <img src="Assets/gallery-photo-1.jpg" alt="">
-                <img src="Assets/gallery-photo-2.jpg" alt="">
-                <img src="Assets/gallery-photo-3.jpg" alt="">
+                
+                <div class="photo1">
+                    <img src="Assets/gallery-photo-1.jpg" alt="Person carrying a black felt back with gold black and white accents on the strap.">
+                </div>
+                <div class="photo2">
+                    <img src="Assets/gallery-photo-2.jpg" alt="brown burberry bag with red pink and black designs printed on the outer shell.">
+                </div>
+                <div class="photo3">
+                    <img src="Assets/gallery-photo-3.jpg" alt="white bag with a metal clasp and round white frammed sunglasses.">
+                </div>
             </div>
         </div>
     </section> <!--End of latest collection section-->
@@ -100,27 +108,27 @@
     </section> <!--END OF ICON SECTION-->
 
     <section class="fallTrends">
-        <div class="wrapper clearfix">
+        <div class="clearfix">
+            <div class="fallTrendsImage">
+                <img src="Assets/right-photo.jpg" alt="person carrying a transparent bag with a black leather boarder.">
+            </div>
             <div class="fallTrendsInfo">
                 <h2>Fall Trends</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur deleniti fugiat quia minima architecto at soluta dolores eveniet aliquam? Nam illum earum numquam, voluptates, enim excepturi sapiente maxime commodi fuga asperiores amet fugit repudiandae magni?</p>
-                <button>read more</button>
-            </div>
-            <div class="fallTrendsImage">
-                <img src="Assets/right-photo.jpg" alt="">
+                <a href="#" class="readMore">read more</a>
             </div>
         </div>
     </section>
 
     <section class="veganLeather">
-        <div class="wrapper clearfix">
+        <div class="clearfix">
             <div class="veganLeatherImage">
-                <img src="assets/left-photo.jpg" alt="">
+                <img src="assets/left-photo.jpg" alt="light brown, almost orange, bag with a small fluffy pom hanging off persons shoulder.">
             </div>
             <div class="veganLeatherInfo">
                 <h2>Vegan Leather</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quos repudiandae autem quo voluptatibus necessitatibus suscipit ratione? Sunt, dignissimos omnis deserunt quos voluptates facilis, nostrum doloremque possimus culpa facere pariatur veritatis neque sit quis fugiat.</p>
-                <button>read more</button>
+                <a href="#" class="readMore">read more</a>
             </div>
         </div>
     </section>
@@ -137,6 +145,11 @@
             <div class="subscribe">
                 <h3>Stay updated</h3>
                 <p>Subscribe to our newsletter to stay updated.</p>
+                <form action="#" method="#" class="myForm" name="myForm">
+                    <label for="yourEmail"></label>
+                    <input type="email" id="yourEmail" placeholder="email address">
+                    <button>Subscribe</button>
+                <form>
             </div>
     
             <div class="contact">
